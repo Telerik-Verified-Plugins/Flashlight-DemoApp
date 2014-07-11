@@ -41,5 +41,6 @@
     "ID_CAP_ISV_CAMERA",
     "ID_CAP_MICROPHONE"
   ],
-  "Framework": "Cordova"
+  "Framework": "Cordova",
+  "Description": "Flashlight plugin demo"
 }
