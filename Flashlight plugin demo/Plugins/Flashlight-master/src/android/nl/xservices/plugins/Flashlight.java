@@ -1,5 +1,7 @@
 package nl.xservices.plugins;
 
+import android.content.pm.FeatureInfo;
+import android.content.pm.PackageManager;
 import android.graphics.SurfaceTexture;
 import android.hardware.Camera;
 import android.os.Build;
@@ -59,9 +61,13 @@ public class Flashlight extends CordovaPlugin {
   }
 
   private boolean isCapable() {
-    return mCamera != null &&
-        mCamera.getParameters().getSupportedFlashModes() != null &&
-        mCamera.getParameters().getSupportedFlashModes().contains(Camera.Parameters.FLASH_MODE_TORCH);
+    final PackageManager packageManager = this.cordova.getActivity().getPackageManager();
+    for (final FeatureInfo feature : packageManager.getSystemAvailableFeatures()) {
+      if (PackageManager.FEATURE_CAMERA_FLASH.equalsIgnoreCase(feature.name)) {
+        return true;
+      }
+    }
+    return false;
   }
 
   private void toggleTorch(boolean switchOn, CallbackContext callbackContext) {
