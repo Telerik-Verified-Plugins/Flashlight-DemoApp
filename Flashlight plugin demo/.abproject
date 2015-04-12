@@ -43,5 +43,7 @@
   ],
   "Framework": "Cordova",
   "Description": "Flashlight plugin demo",
-  "projectVersion": "1"
+  "projectVersion": "1",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8PackageIdentityName": "1234Telerik.com.telerik.plugindemo.flashlight"
 }
