@@ -66,7 +66,7 @@
                 clearInterval(inter);
                 // let's make sure it's off
   	            window.plugins.flashlight.switchOff();
-              }, 7000);
+              }, 5000);
             }
         },
 
