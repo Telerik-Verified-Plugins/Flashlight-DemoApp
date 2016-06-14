@@ -1,0 +1,11 @@
+{
+  "CorePlugins": [
+    "cordova-plugin-console",
+    "cordova-plugin-device",
+    "cordova-plugin-dialogs",
+    "cordova-plugin-network-information",
+    "cordova-plugin-splashscreen",
+    "cordova-plugin-statusbar",
+    "nl.x-services.plugins.flashlight@3.1.0"
+  ]
+}

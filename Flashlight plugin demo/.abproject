@@ -4,7 +4,7 @@
   "ProjectName": "Flashlight plugin demo",
   "IsRunnable": "true",
   "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
-  "FrameworkVersion": "4.0.0",
+  "FrameworkVersion": "5.0.0",
   "AndroidPermissions": [
     "android.permission.CAMERA",
     "android.permission.READ_PHONE_STATE",
@@ -13,12 +13,12 @@
   ],
   "CorePlugins": [
     "cordova-plugin-console",
-    "cordova-plugin-crosswalk-webview@1.2.0",
     "cordova-plugin-device",
     "cordova-plugin-dialogs",
     "cordova-plugin-network-information",
     "cordova-plugin-splashscreen",
-    "cordova-plugin-statusbar"
+    "cordova-plugin-statusbar",
+    "nl.x-services.plugins.flashlight@3.1.0"
   ],
   "DeviceOrientations": [
     "Portrait",
@@ -31,7 +31,7 @@
     "ID_RESOLUTION_WXGA",
     "ID_RESOLUTION_HD720P"
   ],
-  "BundleVersion": "1.0",
+  "BundleVersion": "1.0.1",
   "DisplayName": "Flashlight plugin demo",
   "Author": "Telerik",
   "WP8TileTitle": "Flashlight",
@@ -46,5 +46,6 @@
   "Description": "Flashlight plugin demo",
   "projectVersion": "1",
   "WP8WindowsPublisherName": "CN=Telerik",
-  "WP8PackageIdentityName": "1234Telerik.com.telerik.plugindemo.flashlight"
+  "WP8PackageIdentityName": "1234Telerik.com.telerik.plugindemo.flashlight",
+  "AndroidVersionCode": "2"
 }
